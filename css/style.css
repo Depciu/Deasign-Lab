@@ -1,24 +1,4 @@
-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 25px;
-  padding: 25px; }
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 25px; }
-  .container p {
-    margin: 15px; }
-
-.class {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.gitara {
+.div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
