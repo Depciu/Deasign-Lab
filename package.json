@@ -8,9 +8,9 @@
     "test:html": "glob-run nu-html-checker *.html",
     "build": "npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:sass": "sass --sourcemap=none --update sass/style.sass:css/style.css",
-    "build:autoprefixer": "autoprefixer-cli -o css/style.css css/style.css",
+    "build:autoprefixer": "autoprefixer-cli css/style.css",
     "watch": "parallelshell \"npm run watch:sassprefixer\" \"npm run watch:browser-sync\" ",
-    "watch:sassprefixer": "onchange -d 100 sass/style.sass -- npm run build:sass && npm run build:autoprefixer ",
+    "watch:sassprefixer": "onchange sass/style.sass -- npm run build:sass && npm run build:autoprefixer",
     "watch:browser-sync": "glob-run browser-sync start --server --files css/*.css *.html"
   },
   "author": "",
@@ -21,6 +21,7 @@
     "glob-run": "^0.1.6",
     "html-validator-cli": "^3.2.0",
     "nu-html-checker": "^0.1.0",
-    "onchange": "^3.2.1"
+    "onchange": "^3.2.1",
+    "parallelshell": "^3.0.2"
   }
 }
