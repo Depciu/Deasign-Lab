@@ -1,4 +1,19 @@
 @import reset
+@import mixins
+
+
+html
+  font-size: $base-font-size
+
+@media (min-width: 768px) and (max-width: 991px)
+  html
+    font-size: 16px
 
 *
   box-sizing: border-box
+
+body
+  @include font-size(16px)
+
+p
+  @include font-size(16px)

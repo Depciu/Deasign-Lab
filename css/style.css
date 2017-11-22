@@ -41,5 +41,17 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+html {
+  font-size: 16px; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 16px; } }
 * {
   box-sizing: border-box; }
+
+body {
+  font-size: 1rem; }
+
+p {
+  font-size: 1rem; }
