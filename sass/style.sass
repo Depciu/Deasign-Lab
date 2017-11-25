@@ -19,9 +19,9 @@ body
   @include font-size(16px)
   font-family: 'Lato', sans-serif
 
-.row
-  width: 900px
-  margin: auto
+section
+  > .container
+    margin-top: 10%
 
 /* Head */
 
@@ -42,10 +42,11 @@ body
   transform: translate(-50%, -50%)
 
 .hero__text--title
-  @include font-size(52px)
-  text-transform: uppercase
+  @include font-size(45px)
   margin-top: 10%
   margin-bottom: 8%
+  text-transform: uppercase
+  font-style: 800
 
 .hero__text--sentence
   @include font-size(17px)
@@ -53,3 +54,31 @@ body
 
 .hero__icon-mouse
   margin-top: 20%
+
+/* Content */
+
+.content
+  position: relative
+  padding: 10%
+  border: 1px solid #3c3c3c
+  text-align: center
+
+.content__title
+  position: absolute
+  top: -0.5%
+  left: 50%
+  padding: 0 10%
+  background-color: #FFFFFF
+  transform: translate(-50%, -50%)
+  @include font-size(32px)
+  text-transform: uppercase
+
+.content__text
+  max-width: 500px
+  margin: 0 auto
+
+.content__text--paragraph
+  padding-top: 5%
+  @include font-size(16px)
+  line-height: 1.5rem
+  font-weight: 300

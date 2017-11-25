@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900&subset=latin-ext");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,7 +43,7 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 16px; }
+  font-size: 17px; }
 
 @media (min-width: 768px) and (max-width: 991px) {
   html {
@@ -51,7 +52,70 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-size: 1rem; }
+  font-size: 0.9411764706rem;
+  font-family: "Lato", sans-serif; }
 
-p {
-  font-size: 1rem; }
+section > .container {
+  margin-top: 10%; }
+
+/* Head */
+.hero {
+  position: relative;
+  height: 85vh;
+  width: 100%;
+  max-width: 1800px;
+  background-image: url("../images _and_icons/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #ffffff; }
+
+.hero__text {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.hero__text--title {
+  font-size: 2.6470588235rem;
+  margin-top: 10%;
+  margin-bottom: 8%;
+  text-transform: uppercase;
+  font-style: 800; }
+
+.hero__text--sentence {
+  font-size: 1rem;
+  line-height: 30px; }
+
+.hero__icon-mouse {
+  margin-top: 20%; }
+
+/* Content */
+.content {
+  position: relative;
+  padding: 10%;
+  border: 1px solid #3c3c3c;
+  text-align: center; }
+
+.content__title {
+  position: absolute;
+  top: -0.5%;
+  left: 50%;
+  padding: 0 10%;
+  background-color: #FFFFFF;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.8823529412rem;
+  text-transform: uppercase; }
+
+.content__text {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.content__text--paragraph {
+  padding-top: 5%;
+  font-size: 0.9411764706rem;
+  line-height: 1.5rem;
+  font-weight: 300; }
