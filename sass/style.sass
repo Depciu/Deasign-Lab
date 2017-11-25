@@ -57,17 +57,20 @@ section
 
 /* Content */
 
+.border-black
+  border: 1px solid black
+.border-white
+  border: 1px solid white
 .content
   position: relative
-  padding: 10%
-  border: 1px solid #3c3c3c
+  padding: 8%
   text-align: center
 
 .content__title
   position: absolute
   top: -0.5%
   left: 50%
-  padding: 0 10%
+  padding: 0 5%
   background-color: #FFFFFF
   transform: translate(-50%, -50%)
   @include font-size(32px)
@@ -78,7 +81,27 @@ section
   margin: 0 auto
 
 .content__text--paragraph
-  padding-top: 5%
+  padding-bottom: 8%
   @include font-size(16px)
   line-height: 1.5rem
   font-weight: 300
+
+/* Service */
+#service
+  height: 400px
+  width: 100%
+  max-width: 1800px
+  background-image: url("../images _and_icons/service.jpg")
+  @include background-properties
+
+.service
+  height: 400px
+
+.content-service
+  @extend .content
+  margin-top: 8%
+  color: #FFFFFF
+
+.content-service__title
+  @extend .content__title
+  background-color: initial
