@@ -53,18 +53,24 @@ html {
 
 body {
   font-size: 0.9411764706rem;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  color: #3C3C3C; }
 
-section > .container {
-  margin-top: 10%; }
+section {
+  margin: 0 auto; }
+  section > .container {
+    margin-top: 10%;
+    width: 100%;
+    max-width: 1800px; }
 
 /* Head */
 .hero {
   position: relative;
-  height: 85vh;
+  height: 700px;
   width: 100%;
   max-width: 1800px;
-  background-image: url("../images _and_icons/jumbotron.jpg");
+  margin: 0 auto;
+  background-image: url("../images_and_icons/jumbotron.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -83,7 +89,7 @@ section > .container {
   margin-top: 10%;
   margin-bottom: 8%;
   text-transform: uppercase;
-  font-style: 800; }
+  font-weight: 700; }
 
 .hero__text--sentence {
   font-size: 1rem;
@@ -101,7 +107,7 @@ section > .container {
 
 .content, .content-service {
   position: relative;
-  padding: 8%;
+  padding: 2%;
   text-align: center; }
 
 .content__title, .content-service__title {
@@ -117,7 +123,8 @@ section > .container {
 
 .content__text {
   max-width: 500px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 8%; }
 
 .content__text--paragraph {
   padding-bottom: 8%;
@@ -130,7 +137,7 @@ section > .container {
   height: 400px;
   width: 100%;
   max-width: 1800px;
-  background-image: url("../images _and_icons/service.jpg");
+  background-image: url("../images_and_icons/service.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -139,8 +146,60 @@ section > .container {
   height: 400px; }
 
 .content-service {
-  margin-top: 16%;
+  margin-top: 8%;
   color: #FFFFFF; }
 
 .content-service__title {
   background-color: initial; }
+
+/*What we do */
+.content__text--img {
+  padding-top: 8%; }
+
+.content__text--title {
+  padding: 5% 0 5% 2%;
+  font-size: 1.1764705882rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.29rem; }
+
+/* Gallery */
+[class*=col-], .col {
+  padding: 0; }
+
+[class*="photo"] {
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.photo-1 {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-right: 0 solid white;
+  border-left: 0 solid white;
+  background-image: url("../images_and_icons/topworkz.jpg"); }
+
+.photo-2 {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  background-image: url("../images_and_icons/joint.jpg"); }
+
+.photo-3 {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+  border-right: 0 solid white;
+  border-left: 5px solid white;
+  background-image: url("../images_and_icons/market.jpg"); }
+
+.photo-4 {
+  border-top: 0 solid white;
+  border-left: 0 solid white;
+  background-image: url("../images_and_icons/worktop.jpg"); }
+
+.photo-5 {
+  background-image: url("../images_and_icons/label.jpg"); }
+
+.photo-6 {
+  background-image: url("../images_and_icons/kyiv.jpg"); }

@@ -18,19 +18,24 @@ html
 body
   @include font-size(16px)
   font-family: 'Lato', sans-serif
+  color: #3C3C3C
 
 section
+  margin: 0 auto
   > .container
     margin-top: 10%
+    width: 100%
+    max-width: 1800px
 
 /* Head */
 
 .hero
   position: relative
-  height: 85vh
+  height: 700px
   width: 100%
   max-width: 1800px
-  background-image: url("../images _and_icons/jumbotron.jpg")
+  margin: 0 auto
+  background-image: url("../images_and_icons/jumbotron.jpg")
   @include background-properties
   text-align: center
   color: #ffffff
@@ -46,7 +51,7 @@ section
   margin-top: 10%
   margin-bottom: 8%
   text-transform: uppercase
-  font-style: 800
+  font-weight: 700
 
 .hero__text--sentence
   @include font-size(17px)
@@ -63,7 +68,7 @@ section
   border: 1px solid white
 .content
   position: relative
-  padding: 8%
+  padding: 2%
   text-align: center
 
 .content__title
@@ -79,6 +84,7 @@ section
 .content__text
   max-width: 500px
   margin: 0 auto
+  padding-top: 8%
 
 .content__text--paragraph
   padding-bottom: 8%
@@ -91,7 +97,7 @@ section
   height: 400px
   width: 100%
   max-width: 1800px
-  background-image: url("../images _and_icons/service.jpg")
+  background-image: url("../images_and_icons/service.jpg")
   @include background-properties
 
 .service
@@ -99,9 +105,61 @@ section
 
 .content-service
   @extend .content
-  margin-top: 16%
+  margin-top: 8%
   color: #FFFFFF
 
 .content-service__title
   @extend .content__title
   background-color: initial
+
+/*What we do*/
+
+.content__text--img
+  padding-top: 8%
+
+.content__text--title
+  padding: 5% 0 5% 2%
+  @include font-size(20px)
+  text-transform: uppercase
+  font-weight: 700
+  letter-spacing: 0.29rem
+
+/* Gallery */
+
+[class*=col-], .col
+  padding: 0
+
+[class*="photo"]
+  height: 300px
+  width: 100%
+  @include background-properties
+
+.photo-1
+  border-top: 5px solid white
+  border-bottom: 5px solid white
+  border-right: 0 solid white
+  border-left: 0 solid white
+  background-image: url("../images_and_icons/topworkz.jpg")
+
+.photo-2
+  border-top: 5px solid white
+  border-bottom: 5px solid white
+  background-image: url("../images_and_icons/joint.jpg")
+
+.photo-3
+  border-top: 5px solid white
+  border-bottom: 5px solid white
+  border-right: 0 solid white
+  border-left: 5px solid white
+  background-image: url("../images_and_icons/market.jpg")
+
+.photo-4
+  border-top: 0 solid white
+  border-left: 0 solid white
+  background-image: url("../images_and_icons/worktop.jpg")
+
+.photo-5
+  background-image: url("../images_and_icons/label.jpg")
+
+.photo-6
+  background-image: url("../images_and_icons/kyiv.jpg")
