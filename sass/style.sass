@@ -8,16 +8,12 @@
 html
   font-size: $base-font-size
 
-@media (min-width: 768px) and (max-width: 991px)
-  html
-    font-size: 16px
-
 
 *
   box-sizing: border-box
 
 body
-  @include font-size(16px)
+
   font-family: 'Lato', sans-serif
   color: #3C3C3C
 
@@ -208,3 +204,41 @@ section
   position: relative
   top: 50%
   transform: translateY(-50%)
+
+@media (max-width: 550px)
+
+  .hero__text
+    width: 100%
+    padding: 0 5px
+
+  .hero__text--title
+    @include font-size(32px)
+
+  .footer__content--img
+    display: none
+      
+  .col-8
+    display: block
+    width: 100%
+    max-width: 100%
+    flex: 100%
+    padding: 10px 10px
+
+@media (max-width: 700px)
+  .border-black
+    border: none
+  .content__title
+    width: 100%
+    padding: 0
+
+@media (max-width: 750px)
+
+  .photo-1, .photo-2, .photo-3, .photo-4, .photo-5, .photo-6
+    border-top: 2.5px solid #ffffff
+    border-bottom: 2.5px solid #ffffff
+    border-left: 5px solid #ffffff
+    border-right: 5px solid #ffffff
+
+@media (max-width: 950px)
+  .content__title
+    @include font-size(26px)

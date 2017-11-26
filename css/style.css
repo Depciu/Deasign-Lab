@@ -43,16 +43,12 @@ table {
   border-spacing: 0; }
 
 html {
-  font-size: 17px; }
+  font-size: 16px; }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  html {
-    font-size: 16px; } }
 * {
   box-sizing: border-box; }
 
 body {
-  font-size: 0.9411764706rem;
   font-family: "Lato", sans-serif;
   color: #3C3C3C; }
 
@@ -85,14 +81,14 @@ section {
           transform: translate(-50%, -50%); }
 
 .hero__text--title {
-  font-size: 2.6470588235rem;
+  font-size: 2.8125rem;
   margin-top: 10%;
   margin-bottom: 8%;
   text-transform: uppercase;
   font-weight: 700; }
 
 .hero__text--sentence {
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 30px; }
 
 .hero__icon-mouse {
@@ -118,7 +114,7 @@ section {
   background-color: #FFFFFF;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 1.8823529412rem;
+  font-size: 2rem;
   text-transform: uppercase; }
 
 .content__text {
@@ -128,7 +124,7 @@ section {
 
 .content__text--paragraph {
   padding-bottom: 8%;
-  font-size: 0.9411764706rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 300; }
 
@@ -158,7 +154,7 @@ section {
 
 .content__text--title {
   padding: 5% 0 5% 2%;
-  font-size: 1.1764705882rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.29rem; }
@@ -210,7 +206,7 @@ section {
   position: absolute;
   top: 75%;
   left: 5%;
-  font-size: 1.4117647059rem;
+  font-size: 1.5rem;
   letter-spacing: 0.4706rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -247,3 +243,39 @@ section {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
+
+@media (max-width: 550px) {
+  .hero__text {
+    width: 100%;
+    padding: 0 5px; }
+
+  .hero__text--title {
+    font-size: 2rem; }
+
+  .footer__content--img {
+    display: none; }
+
+  .col-8 {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-flex: 100%;
+        -ms-flex: 100%;
+            flex: 100%;
+    padding: 10px 10px; } }
+@media (max-width: 700px) {
+  .border-black {
+    border: none; }
+
+  .content__title, .content-service__title {
+    width: 100%;
+    padding: 0; } }
+@media (max-width: 750px) {
+  .photo-1, .photo-2, .photo-3, .photo-4, .photo-5, .photo-6 {
+    border-top: 2.5px solid #ffffff;
+    border-bottom: 2.5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #ffffff; } }
+@media (max-width: 950px) {
+  .content__title, .content-service__title {
+    font-size: 1.625rem; } }
