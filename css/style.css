@@ -98,7 +98,7 @@ section {
 .hero__icon-mouse {
   margin-top: 20%; }
 
-/* Content */
+/* About Us */
 .border-black {
   border: 1px solid black; }
 
@@ -124,7 +124,7 @@ section {
 .content__text {
   max-width: 500px;
   margin: 0 auto;
-  padding-top: 8%; }
+  padding-top: 6%; }
 
 .content__text--paragraph {
   padding-bottom: 8%;
@@ -168,38 +168,44 @@ section {
   padding: 0; }
 
 [class*="photo"] {
-  height: 300px;
+  height: 250px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
 
 .photo-1 {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  border-right: 0 solid white;
-  border-left: 0 solid white;
+  border-right: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
   background-image: url("../images_and_icons/topworkz.jpg"); }
 
 .photo-2 {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  border-bottom: 5px solid #ffffff;
   background-image: url("../images_and_icons/joint.jpg"); }
 
 .photo-3 {
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
-  border-right: 0 solid white;
-  border-left: 5px solid white;
+  border-bottom: 5px solid #ffffff;
+  border-left: 5px solid #ffffff;
   background-image: url("../images_and_icons/market.jpg"); }
 
 .photo-4 {
-  border-top: 0 solid white;
-  border-left: 0 solid white;
+  border-right: 5px solid #ffffff;
   background-image: url("../images_and_icons/worktop.jpg"); }
 
 .photo-5 {
   background-image: url("../images_and_icons/label.jpg"); }
 
 .photo-6 {
+  border-left: 5px solid #ffffff;
   background-image: url("../images_and_icons/kyiv.jpg"); }
+
+.photo_layer {
+  position: relative; }
+
+.photo__title {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  font-size: 1.6470588235rem;
+  text-transform: uppercase;
+  color: white; }
