@@ -96,7 +96,7 @@ section {
   line-height: 30px; }
 
 .hero__icon-mouse {
-  margin-top: 20%; }
+  margin-top: 25%; }
 
 /* About Us */
 .border-black {
@@ -200,12 +200,18 @@ section {
   background-image: url("../images_and_icons/kyiv.jpg"); }
 
 .photo_layer {
-  position: relative; }
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out; }
+  .photo_layer:hover {
+    background-color: rgba(48, 152, 157, 0.4); }
 
 .photo__title {
   position: absolute;
   top: 75%;
   left: 5%;
-  font-size: 1.6470588235rem;
+  font-size: 1.4117647059rem;
+  letter-spacing: 0.4706rem;
+  font-weight: 700;
   text-transform: uppercase;
   color: white; }

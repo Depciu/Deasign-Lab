@@ -12,6 +12,7 @@ html
   html
     font-size: 16px
 
+
 *
   box-sizing: border-box
 
@@ -58,7 +59,7 @@ section
   line-height: 30px
 
 .hero__icon-mouse
-  margin-top: 20%
+  margin-top: 25%
 
 /* About Us */
 
@@ -160,11 +161,17 @@ section
 
 .photo_layer
   position: relative
+  cursor: pointer
+  transition: all 0.4s ease-in-out
+  &:hover
+    background-color: rgba(48, 152, 157, 0.4)
 
 .photo__title
   position: absolute
   top: 75%
   left: 5%
-  @include font-size(28px)
+  @include font-size(24px)
+  letter-spacing: 0.4706rem
+  font-weight: 700
   text-transform: uppercase
   color: white
